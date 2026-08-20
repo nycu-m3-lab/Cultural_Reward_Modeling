@@ -1,5 +1,8 @@
 # Debiasing Text-to-Image Evaluation via Implicit Cultural Alignment Reward Modeling
 
+[![arXiv](https://img.shields.io/badge/arXiv-2607.15740-b31b1b.svg)](https://arxiv.org/abs/2607.15740)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-FFD21E.svg)](https://huggingface.co/Bensonch/phi35_cultural_reward)
+
 This repository provides the core architecture and evaluation pipeline for the Implicit Cultural Alignment Reward Model. Built upon the Phi-3.5-vision architecture and optimized with DeepSpeed and LoRA, this framework is designed to evaluate and align Multimodal Large Language Models (MLLMs) with nuanced cultural expectations.
 
 ## Architecture
