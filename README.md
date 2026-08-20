@@ -4,13 +4,13 @@ This repository provides the core architecture and evaluation pipeline for the I
 
 ## Architecture
 
-![Architecture Overview](./assets/architecture.png)
+![Architecture Overview](./figure/architecture.png)
 
-Our framework integrates an Implicit Cultural Probe with a Skip-connection Cross-Attention (SkipCA) mechanism[cite: 1]. This design enables late-stage semantic features to directly attend to early-stage visual representations, better preserving culturally salient details[cite: 1]. By bypassing autoregressive text generation, the model processes each evaluation efficiently in 0.21 seconds under our local inference setup, achieving a 10x speedup over standard VQA-based evaluators[cite: 1].
+Our framework integrates an Implicit Cultural Probe with a Skip-connection Cross-Attention (SkipCA) mechanism. This design enables late-stage semantic features to directly attend to early-stage visual representations, better preserving culturally salient details. By bypassing autoregressive text generation, the model processes each evaluation efficiently in 0.21 seconds under our local inference setup, achieving a 10x speedup over standard VQA-based evaluators.
 
 ## Dataset
 
-This project utilizes the **CulturalFrames** dataset to evaluate cultural biases and human expectations in text-to-image generation and multimodal understanding[cite: 1].
+This project utilizes the **CulturalFrames** dataset to evaluate cultural biases and human expectations in text-to-image generation and multimodal understanding.
 
 * **Dataset Link**: [CulturalFrames on Hugging Face](https://huggingface.co/datasets/mair-lab/CulturalFrames)
 
