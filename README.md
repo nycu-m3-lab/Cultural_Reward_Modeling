@@ -1,4 +1,4 @@
-# Implicit Cultural Alignment Reward Model
+# Debiasing Text-to-Image Evaluation via Implicit Cultural Alignment Reward Modeling
 
 This repository provides the core architecture and evaluation pipeline for the Implicit Cultural Alignment Reward Model. Built upon the Phi-3.5-vision architecture and optimized with DeepSpeed and LoRA, this framework is designed to evaluate and align Multimodal Large Language Models (MLLMs) with nuanced cultural expectations.
 
