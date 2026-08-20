@@ -38,16 +38,17 @@ If you find this repository or our reward model useful in your research, please 
 
 ```bibtex
 @misc{chang2026debiasing,
-  title={Debiasing Text-to-Image Evaluation via Implicit Cultural Alignment Reward Modeling},
-  author={Bo-An Chang and Yu-Chih Chen},
-  year={2026},
-  eprint={XXXX.XXXXX}, 
-  archivePrefix={arXiv},
-  primaryClass={cs.CV},
-  url={[https://arxiv.org/abs/XXXX.XXXXX](https://arxiv.org/abs/XXXX.XXXXX)}
+      title={Debiasing Text-to-Image Evaluation via Implicit Cultural Alignment Reward Modeling}, 
+      author={Bo-An Chang and Yu-Chih Chen},
+      year={2026},
+      eprint={2607.15740},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2607.15740}, 
 }
+```
 
 ## Contacts
 
-* **Bo-An Chang**: boanzhang82@gapp.nthu.edu.tw 
-* **Yu-Chih Chen**: berriechen@nycu.edu.tw 
+* **Bo-An Chang**: boanzhang82@gapp.nthu.edu.tw (National Tsing Hua University)
+* **Yu-Chih Chen**: berriechen@nycu.edu.tw (National Yang Ming Chiao Tung University)
