@@ -28,9 +28,12 @@ The reward model assigns continuous scalar rewards that closely align with the n
 
 ## Acknowledgements
 
-This work was supported by the MOE Yushan Young Scholar Program under Grant MOE-114-YSFEE-0010-008-P1 and NSTC Taiwan under Grant NSTC 115-2813-C-A49-146-E. 
+This work was supported by the MOE Yushan Young Scholar Program under Grant MOE-114-YSFEE-0010-008-P1 and NSTC Taiwan under Grant NSTC 115-2813-C-A49-146-E.
 
-We thank the excellent research and open-source works that made this project possible, including Phi-3.5-vision, DeepSpeed, and LoRA. We also deeply acknowledge the datasets and theoretical frameworks that support our cultural understanding components, including the CulturalFrames benchmark, the World Values Survey (WVS), and CulturalAtlas.
+We deeply appreciate the excellent research and open-source communities that made this project possible. Specifically, we would like to acknowledge the authors and maintainers of the following repositories for their foundational frameworks and datasets:
+* [OpenRLHF](https://github.com/OpenRLHF/OpenRLHF)
+* [LLaVA-Reward](https://github.com/sjz5202/LLaVA-Reward)
+* [CulturalFrames](https://github.com/mair-lab/CulturalFrames)
 
 ## Citation
 
