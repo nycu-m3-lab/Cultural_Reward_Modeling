@@ -20,12 +20,6 @@ To maintain a lightweight and clean Git history, the fine-tuned LoRA adapters an
 
 * **Model Repository**: [Bensonch/phi35_cultural_reward](https://huggingface.co/Bensonch/phi35_cultural_reward)
 
-### Downloading the Weights
-
-You can easily pull the required weights directly into your local `checkpoints` directory using the Hugging Face CLI:
-
-```bash
-hf download Bensonch/phi35_cultural_reward --local-dir ./checkpoints
 
 ## Qualitative Results
 
