@@ -20,10 +20,11 @@ To maintain a lightweight and clean Git history, the fine-tuned LoRA adapters an
 
 * **Model Repository**: [Bensonch/phi35_cultural_reward](https://huggingface.co/Bensonch/phi35_cultural_reward)
 
-
 ## Qualitative Results
 
-The reward model assigns continuous scalar rewards that closely align with the nuanced critiques provided by native human annotators[cite: 1]. It effectively penalizes generated images that exhibit explicit prompt mismatches, implicit cultural incongruities, or compound issues.
+![Qualitative Results](./figure/qualitative_results.png)
+
+The reward model assigns continuous scalar rewards that closely align with the nuanced critiques provided by native human annotators. It effectively penalizes generated images that exhibit explicit prompt mismatches, implicit cultural incongruities, or compound issues.
 
 ## Acknowledgements
 
@@ -33,6 +34,7 @@ This work was supported by the MOE Yushan Young Scholar Program under Grant MOE-
 
 If you find this repository or our reward model useful in your research, please consider citing our work:
 
+```bibtex
 @misc{chang2026debiasing,
   title={Debiasing Text-to-Image Evaluation via Implicit Cultural Alignment Reward Modeling},
   author={Chang, Bo-An and Chen, Yu-Chih},
