@@ -28,7 +28,9 @@ The reward model assigns continuous scalar rewards that closely align with the n
 
 ## Acknowledgements
 
-This work was supported by the MOE Yushan Young Scholar Program under Grant MOE-114-YSFEE-0010-008-P1 and NSTC Taiwan under Grant NSTC 115-2813-C-A49-146-E.
+This work was supported by the MOE Yushan Young Scholar Program under Grant MOE-114-YSFEE-0010-008-P1 and NSTC Taiwan under Grant NSTC 115-2813-C-A49-146-E. 
+
+We thank the excellent research and open-source works that made this project possible, including Phi-3.5-vision, DeepSpeed, and LoRA. We also deeply acknowledge the datasets and theoretical frameworks that support our cultural understanding components, including the CulturalFrames benchmark, the World Values Survey (WVS), and CulturalAtlas.
 
 ## Citation
 
@@ -37,6 +39,15 @@ If you find this repository or our reward model useful in your research, please 
 ```bibtex
 @misc{chang2026debiasing,
   title={Debiasing Text-to-Image Evaluation via Implicit Cultural Alignment Reward Modeling},
-  author={Chang, Bo-An and Chen, Yu-Chih},
-  year={2026}
+  author={Bo-An Chang and Yu-Chih Chen},
+  year={2026},
+  eprint={XXXX.XXXXX}, 
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={[https://arxiv.org/abs/XXXX.XXXXX](https://arxiv.org/abs/XXXX.XXXXX)}
 }
+
+## Contacts
+
+* **Bo-An Chang**: boanzhang82@gapp.nthu.edu.tw 
+* **Yu-Chih Chen**: berriechen@nycu.edu.tw 
