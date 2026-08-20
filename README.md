@@ -1,28 +1,24 @@
 # Implicit Cultural Alignment Reward Model
 
-This repository provides the core architecture and evaluation pipeline for the **Implicit Cultural Alignment Reward Model**. Built upon the Phi-3.5-vision architecture and optimized with DeepSpeed and LoRA, this framework is designed to evaluate and align Multimodal Large Language Models (MLLMs) with nuanced cultural expectations.
+This repository provides the core architecture and evaluation pipeline for the Implicit Cultural Alignment Reward Model. Built upon the Phi-3.5-vision architecture and optimized with DeepSpeed and LoRA, this framework is designed to evaluate and align Multimodal Large Language Models (MLLMs) with nuanced cultural expectations.
 
-## 📌 Repository Structure
+## Architecture
 
-- `eval/`: Contains evaluation scripts, including the batch inference pipeline (`batch_inference.py`) for pairwise comparison.
-- `llava_reward/`: The core model architecture, custom loss functions, and dataset loading utilities.
-- `data/`: Directory for input datasets and human annotations.
-- `script/`: Shell scripts for distributed training and evaluation configurations.
+![Architecture Overview](./assets/architecture.png)
 
-## 📊 Dataset
+Our framework integrates an Implicit Cultural Probe with a Skip-connection Cross-Attention (SkipCA) mechanism[cite: 1]. This design enables late-stage semantic features to directly attend to early-stage visual representations, better preserving culturally salient details[cite: 1]. By bypassing autoregressive text generation, the model processes each evaluation efficiently in 0.21 seconds under our local inference setup, achieving a 10x speedup over standard VQA-based evaluators[cite: 1].
 
-This project utilizes the **CulturalFrames** dataset to evaluate cultural biases and human expectations in text-to-image generation and multimodal understanding. 
+## Dataset
 
-You can access and download the official dataset from Hugging Face:
+This project utilizes the **CulturalFrames** dataset to evaluate cultural biases and human expectations in text-to-image generation and multimodal understanding[cite: 1].
+
 * **Dataset Link**: [CulturalFrames on Hugging Face](https://huggingface.co/datasets/mair-lab/CulturalFrames)
 
-Please ensure the dataset is downloaded and properly formatted as `./data/test_dataset.json` before running the evaluation.
+## Model Weights
 
-## 💾 Model Weights
+To maintain a lightweight and clean Git history, the fine-tuned LoRA adapters and model checkpoints are hosted on Hugging Face.
 
-To maintain a lightweight and clean Git history, the fine-tuned LoRA adapters and model checkpoints are hosted on Hugging Face instead of GitHub. 
-
-* **Model Repository**: [Bensonch/phi35_cultural_reward](https://huggingface.co/Bensonch/phi35-cultural-ultra-reward) *(Note: Please update the URL if the repository name differs)*
+* **Model Repository**: [Bensonch/phi35_cultural_reward](https://huggingface.co/Bensonch/phi35_cultural_reward)
 
 ### Downloading the Weights
 
