@@ -1,7 +1,7 @@
 #!/bin/bash
 
-DATA_PATH="/mnt/NAS/boan/Culturalframes/train_dataset.json"
-FINAL_OUTPUT_DIR="/mnt/NAS/boan/output"
+DATA_PATH="/path/to/your/train_dataset.json"
+FINAL_OUTPUT_DIR="/path/to/your/output"
 PRETRAIN_MODEL="microsoft/Phi-3.5-vision-instruct"
 
 deepspeed train_llava_reward.py \
