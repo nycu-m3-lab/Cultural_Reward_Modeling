@@ -25,7 +25,7 @@ To maintain a lightweight and clean Git history, the fine-tuned LoRA adapters an
 
 ## Qualitative Results
 
-![Qualitative Results](./figure/qualitative_results.png)
+![Qualitative Results](./figure/result.png)
 
 The reward model assigns continuous scalar rewards that closely align with the nuanced critiques provided by native human annotators. It effectively penalizes generated images that exhibit explicit prompt mismatches, implicit cultural incongruities, or compound issues.
 
