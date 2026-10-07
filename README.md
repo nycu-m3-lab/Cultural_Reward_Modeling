@@ -15,7 +15,7 @@ Our framework integrates an Implicit Cultural Probe with a Skip-connection Cross
 
 This project utilizes the **CulturalFrames** dataset to evaluate cultural biases and human expectations in text-to-image generation and multimodal understanding.
 
-* **Dataset Link**: [CulturalFrames on Hugging Face](https://huggingface.co/datasets/mair-lab/CulturalFrames)
+* **Dataset Link**: [CulturalFrames](https://huggingface.co/datasets/mair-lab/CulturalFrames)
 
 ## Installation
 
