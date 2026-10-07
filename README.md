@@ -17,6 +17,36 @@ This project utilizes the **CulturalFrames** dataset to evaluate cultural biases
 
 * **Dataset Link**: [CulturalFrames on Hugging Face](https://huggingface.co/datasets/mair-lab/CulturalFrames)
 
+## Installation
+
+Requires Python 3.10, an NVIDIA GPU, and CUDA 12.8. Please follow the steps in order.
+
+```bash
+# 1. Create the environment
+conda create -n cultural_rm python=3.10 -y
+conda activate cultural_rm
+
+# 2. CUDA toolkit (provides nvcc, which flash-attn needs to build).
+#    Skip this if `nvcc --version` already reports 12.8.
+conda install -c conda-forge cuda-toolkit=12.8 -y
+export CUDA_HOME=$CONDA_PREFIX
+
+# 3. PyTorch (CUDA 12.8 build)
+pip install torch==2.11.0 torchvision==0.26.0 --index-url https://download.pytorch.org/whl/cu128
+
+# 4. Build dependencies for flash-attn
+pip install ninja packaging psutil
+
+# 5. flash-attn (compiled from source, which can take a while)
+pip install flash-attn==2.8.3.post1 --no-build-isolation
+
+# 6. Remaining dependencies
+pip install -r requirements.txt
+
+# 7. Install this repository
+pip install -e .
+```
+
 ## Model Weights
 
 To maintain a lightweight and clean Git history, the fine-tuned LoRA adapters and model checkpoints are hosted on Hugging Face. (coming soon)
