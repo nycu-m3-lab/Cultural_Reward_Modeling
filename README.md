@@ -49,7 +49,7 @@ pip install -e .
 
 ## Model Weights
 
-To maintain a lightweight and clean Git history, the fine-tuned LoRA adapters and model checkpoints are hosted on Hugging Face. (coming soon)
+To maintain a lightweight and clean Git history, the fine-tuned LoRA adapters and model checkpoints are hosted on Hugging Face. 
 
 * **Model Repository**: [phi35_cultural_reward](https://huggingface.co/Bensonch/phi35_cultural_reward)
 
