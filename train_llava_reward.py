@@ -91,7 +91,7 @@ def train(args):
     # strategy.print(model)
 
     # configure optimizer
-    optim = strategy.create_optimizer(model,lora=args.lora_rank>0, lr=args.learning_rate, betas=(0.9, 0.95), weight_decay=args.l2)
+    optim = strategy.create_optimizer(model, lora=False, lr=args.learning_rate, betas=(0.9, 0.95), weight_decay=args.l2)
     total_data = blending_datasets(
         args.dataset,
         args.dataset_probs,
